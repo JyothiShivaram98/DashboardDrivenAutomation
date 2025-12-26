@@ -118,5 +118,9 @@ extracted_employees.csv
 
 ---
 
+## Login Page
+![Login Page](screenshots/login_page.png)
+
+
 ## Author
 Prepared for RPA Practical Assignment – Dashboard Driven Automation.

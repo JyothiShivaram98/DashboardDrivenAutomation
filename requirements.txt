@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+selenium
+pandas
+webdriver-manager
+jinja2

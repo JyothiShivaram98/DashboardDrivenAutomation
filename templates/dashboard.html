@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OrangeHRM Automation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="full-screen-white">
+        <h2>OrangeHRM Automation Dashboard</h2>
+        <div class="dashboard">
+            <!-- Left: Form -->
+            <div class="form-section">
+                <form action="/run" method="post">
+                    <h3>Login Details</h3>
+                    <input type="text" name="username" placeholder="Username" required><br>
+                    <input type="password" name="password" placeholder="Password" required><br>
+
+                    <h3>Employee Details</h3>
+                    <input type="text" name="first_name" placeholder="First Name" required><br>
+                    <input type="text" name="last_name" placeholder="Last Name" required><br>
+                    <input type="text" name="emp_id" placeholder="Employee ID" required><br>
+
+                    <button type="submit">Run Automation</button>
+                </form>
+            </div>
+
+            <!-- Right: Result -->
+            <div class="result-section">
+                {% if result %}
+                    <h3>Result</h3>
+                    <p><strong>Status:</strong> {{ result.status }}</p>
+                    <p><strong>Message:</strong> {{ result.message }}</p>
+                    <p><strong>Employee:</strong> {{ result.employee }}</p>
+                {% else %}
+                    <p> </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

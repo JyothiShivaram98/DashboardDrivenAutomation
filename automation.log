@@ -1,0 +1,238 @@
+
+2025-12-26 22:57:01,592 [INFO] ===== Automation started =====
+2025-12-26 22:57:01,593 [INFO] Starting Chrome browser
+2025-12-26 22:57:03,590 [INFO] Opening OrangeHRM website
+2025-12-26 22:57:12,544 [INFO] Navigating to PIM section
+2025-12-26 22:57:16,315 [INFO] Clicking Add Employee
+2025-12-26 22:57:17,891 [INFO] Entering employee details: loli s (98)
+2025-12-26 22:57:18,807 [INFO] Saving employee
+2025-12-26 22:57:22,147 [INFO] Navigating to Employee List
+2025-12-26 22:57:52,245 [WARNING] Employee List click failed — using fallback URL
+2025-12-26 22:57:55,851 [INFO] Fetching all employee records
+2025-12-26 22:58:05,459 [INFO] ===== Automation started =====
+2025-12-26 22:58:05,461 [INFO] Starting Chrome browser
+2025-12-26 22:58:07,076 [INFO] Opening OrangeHRM website
+2025-12-26 22:58:14,303 [INFO] Navigating to PIM section
+2025-12-26 22:58:17,872 [INFO] Clicking Add Employee
+2025-12-26 22:58:19,734 [INFO] Entering employee details: Jyothi S (345)
+2025-12-26 22:58:20,837 [INFO] Saving employee
+2025-12-26 22:58:23,987 [INFO] Navigating to Employee List
+2025-12-26 22:58:54,334 [WARNING] Employee List click failed — using fallback URL
+2025-12-26 22:58:58,147 [INFO] Fetching all employee records
+2025-12-26 23:05:39,551 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc87813df0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/8f25a3059ac768d5155124f082090f32/elements
+2025-12-26 23:05:39,552 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc86fcb820>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/8f25a3059ac768d5155124f082090f32/elements
+2025-12-26 23:05:39,553 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc86fcb7f0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/8f25a3059ac768d5155124f082090f32/elements
+2025-12-26 23:05:39,556 [ERROR] Automation failed
+Traceback (most recent call last):
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 441, in request
+    self.endheaders()
+  File "/usr/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 279, in connect
+    self.sock = self._new_conn()
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fbc87887880>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/Documents/DashboardDrivenAutomation/automation.py", line 87, in run_automation
+    (By.XPATH, "//div[@class='oxd-table-body']")))
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 792, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 382, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/_request_methods.py", line 143, in request
+    return self.request_encode_body(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=33075): Max retries exceeded with url: /session/8f25a3059ac768d5155124f082090f32/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc87887880>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-12-26 23:05:39,567 [INFO] Closing browser
+2025-12-26 23:05:39,568 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc86f56310>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/8f25a3059ac768d5155124f082090f32
+2025-12-26 23:05:39,569 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc87879e80>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/8f25a3059ac768d5155124f082090f32
+2025-12-26 23:05:39,572 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc86f04730>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/8f25a3059ac768d5155124f082090f32
+2025-12-26 23:05:39,793 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc86f56700>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/6db9ed86a4743ee3f44c1eb6bf1662d4/elements
+2025-12-26 23:05:39,795 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc86f5f490>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/6db9ed86a4743ee3f44c1eb6bf1662d4/elements
+2025-12-26 23:05:39,796 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc86f5f250>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/6db9ed86a4743ee3f44c1eb6bf1662d4/elements
+2025-12-26 23:05:39,798 [ERROR] Automation failed
+Traceback (most recent call last):
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 441, in request
+    self.endheaders()
+  File "/usr/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 279, in connect
+    self.sock = self._new_conn()
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fbc86f5f0d0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/Documents/DashboardDrivenAutomation/automation.py", line 87, in run_automation
+    (By.XPATH, "//div[@class='oxd-table-body']")))
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 792, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 382, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/_request_methods.py", line 143, in request
+    return self.request_encode_body(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/user/Documents/DashboardDrivenAutomation/.venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=52193): Max retries exceeded with url: /session/6db9ed86a4743ee3f44c1eb6bf1662d4/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc86f5f0d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-12-26 23:05:39,800 [INFO] Closing browser
+2025-12-26 23:05:39,802 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc86f5fd00>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/6db9ed86a4743ee3f44c1eb6bf1662d4
+2025-12-26 23:05:39,803 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc86f3b070>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/6db9ed86a4743ee3f44c1eb6bf1662d4
+2025-12-26 23:05:39,804 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbc86f3bc10>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/6db9ed86a4743ee3f44c1eb6bf1662d4
+2025-12-26 23:06:22,298 [INFO] ===== Automation started =====
+2025-12-26 23:06:22,298 [INFO] Starting Chrome browser
+2025-12-26 23:06:24,869 [INFO] Opening OrangeHRM website
+2025-12-26 23:06:30,206 [INFO] Entering login credentials
+2025-12-26 23:06:31,593 [INFO] Navigating to PIM section
+2025-12-26 23:06:35,146 [INFO] Clicking Add Employee
+2025-12-26 23:06:36,675 [INFO] Entering employee details: Jyothi S (8765)
+2025-12-26 23:06:37,589 [INFO] Saving employee
+2025-12-26 23:06:40,711 [INFO] Navigating to Employee List
+2025-12-26 23:07:10,784 [WARNING] Employee List click failed — using fallback URL
+2025-12-26 23:07:14,335 [INFO] Fetching all employees from table
+2025-12-26 23:07:16,434 [INFO] Saved 40 employees to extracted_employees.csv
+2025-12-26 23:07:16,434 [INFO] Automation completed successfully
+2025-12-26 23:07:16,434 [INFO] Closing browser
+2025-12-26 23:14:27,757 [INFO] ===== Automation started =====
+2025-12-26 23:14:27,760 [INFO] Starting Chrome browser
+2025-12-26 23:14:29,102 [INFO] Opening OrangeHRM website
+2025-12-26 23:14:36,439 [INFO] Entering login credentials
+2025-12-26 23:14:39,890 [INFO] Navigating to PIM section
+2025-12-26 23:14:42,207 [INFO] Clicking Add Employee
+2025-12-26 23:14:43,957 [INFO] Entering employee details: pallavi sj (e104)
+2025-12-26 23:14:45,369 [INFO] Saving employee
+2025-12-26 23:14:48,959 [INFO] Navigating to Employee List
+2025-12-26 23:15:19,170 [WARNING] Employee List click failed — using fallback URL
+2025-12-26 23:15:22,763 [INFO] Fetching all employees from table with pagination
+2025-12-26 23:15:23,848 [INFO] Saved 50 employees to extracted_employees.csv
+2025-12-26 23:15:23,849 [INFO] Automation completed successfully
+2025-12-26 23:15:23,849 [INFO] Closing browser
+2025-12-26 23:21:38,230 [INFO] ===== Automation started =====
+2025-12-26 23:21:46,050 [INFO] Logged in
+2025-12-26 23:21:55,747 [INFO] Reading page 1
+2025-12-26 23:21:57,393 [INFO] No Next button — stopping pagination
+2025-12-26 23:21:57,399 [INFO] Saved 41 employees to extracted_employees.csv
+2025-12-26 23:21:57,399 [INFO] Closing browser
+2025-12-26 23:25:01,011 [INFO] Reading page 1
+2025-12-26 23:25:33,099 [INFO] No Next button — stopping
+2025-12-26 23:26:24,412 [INFO] ===== Automation started =====
+2025-12-26 23:26:24,412 [INFO] Starting Chrome browser
+2025-12-26 23:26:25,927 [INFO] Opening OrangeHRM website
+2025-12-26 23:26:31,138 [INFO] Entering login credentials
+2025-12-26 23:26:35,079 [INFO] Navigating to PIM section
+2025-12-26 23:26:37,049 [INFO] Clicking Add Employee
+2025-12-26 23:26:38,599 [INFO] Entering employee details: Jyothi S (7658)
+2025-12-26 23:26:39,657 [INFO] Saving employee
+2025-12-26 23:26:42,771 [INFO] Navigating to Employee List
+2025-12-26 23:27:12,894 [WARNING] Employee List click failed — using fallback URL
+2025-12-26 23:27:13,373 [INFO] Searching for employee
+2025-12-26 23:27:17,232 [INFO] Extracting employee table data
+2025-12-26 23:27:18,159 [INFO] Employee data saved to extracted_employees.csv
+2025-12-26 23:27:18,159 [INFO] Automation completed successfully
+2025-12-26 23:27:18,159 [INFO] Closing browser
+2025-12-26 23:27:33,135 [INFO] ===== Automation started =====
+2025-12-26 23:27:33,136 [INFO] Starting Chrome browser
+2025-12-26 23:27:34,712 [INFO] Opening OrangeHRM website
+2025-12-26 23:27:40,145 [INFO] Entering login credentials
+2025-12-26 23:27:43,105 [INFO] Navigating to PIM section
+2025-12-26 23:27:45,078 [INFO] Clicking Add Employee
+2025-12-26 23:27:46,338 [INFO] Entering employee details: Jyothi shivaram (Emp98)
+2025-12-26 23:27:47,340 [INFO] Saving employee
+2025-12-26 23:27:50,587 [INFO] Navigating to Employee List
+2025-12-26 23:28:20,943 [WARNING] Employee List click failed — using fallback URL
+2025-12-26 23:28:21,458 [INFO] Searching for employee
+2025-12-26 23:28:25,525 [INFO] Extracting employee table data
+2025-12-26 23:28:26,595 [INFO] Employee data saved to extracted_employees.csv
+2025-12-26 23:28:26,595 [INFO] Automation completed successfully
+2025-12-26 23:28:26,595 [INFO] Closing browser
+2025-12-26 23:48:52,297 [INFO] ===== Automation started =====
+2025-12-26 23:48:52,298 [INFO] Starting Chrome browser
+2025-12-26 23:48:53,577 [INFO] Opening OrangeHRM website
+2025-12-26 23:48:58,379 [INFO] Entering login credentials
+2025-12-26 23:48:59,755 [INFO] Navigating to PIM section
+2025-12-26 23:49:03,527 [INFO] Clicking Add Employee
+2025-12-26 23:49:05,348 [INFO] Entering employee details: Jyothi Lakshmi (emp111)
+2025-12-26 23:49:06,394 [INFO] Saving employee
+2025-12-26 23:49:09,507 [INFO] Navigating to Employee List
+2025-12-26 23:49:39,981 [WARNING] Employee List click failed — using fallback URL
+2025-12-26 23:49:40,455 [INFO] Searching for employee
+2025-12-26 23:49:44,396 [INFO] Extracting employee table data
+2025-12-26 23:49:45,510 [INFO] Employee data saved to extracted_employees.csv
+2025-12-26 23:49:45,510 [INFO] Automation completed successfully
+2025-12-26 23:49:45,510 [INFO] Closing browser
